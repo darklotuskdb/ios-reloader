@@ -6,6 +6,11 @@ The iOS Reloader is a weaponizing tool for jailbroken iOS devices. It facilitate
 ./iOS-Reloader
 ```
 
+# Installation
+```
+git clone https://github.com/darklotuskdb/ios-reloader.git && cd ios-reloader && chmod +x *.sh
+```
+
 # Screenshot
 ![iOS-Reloader](https://github.com/darklotuskdb/ios-reloader/assets/29382875/d98f8185-a410-4e5f-8ea1-6d7732c79d48)
 
