@@ -24,17 +24,17 @@ mv /etc/apt/sources.list.d/cydia.list /etc/apt/sources.list.d/cydia.list.bak &> 
 
 echo -e "\n\e[92m[+] Preparing the cydia.list\e[0m"
 
-echo -e "deb https://apt.bingner.com/ ./\ndeb https://repo.hackyouriphone.org/ ./\ndeb https://cydia.ichitaso.com/ ./\ndeb http://apt.modmyi.com/ stable main\ndeb https://havoc.app/ ./\ndeb http://julioverne.github.io/ ./\ndeb https://cydia.nowsecure.com/ ./\ndeb http://cydia.zodttd.com/repo/cydia/ stable main\ndeb https://repo.getsileo.app/ ./\ndeb ttps://repo.dynastic.co/ ./\ndeb http://apt.thebigboss.org/repofiles/cydia/ stable main\ndeb https://ryleyangus.com/repo/ ./\ndeb https://repo.chariz.com/ ./\ndeb https://ios.jjolano.me/ /\ndeb https://ios.tweaks.fun/ ./\ndeb https://cydia.iphonecake.com/ ./\ndeb https://cydia.angelxwind.net/ ./\ndeb https://repo.packix.com/ ./\ndeb https://build.frida.re/ ./\n" | tee /etc/apt/sources.list.d/cydia.list
+echo -e "deb https://apt.bingner.com/ ./\ndeb http://apt.modmyi.com/ stable main\ndeb http://apt.thebigboss.org/repofiles/cydia/ stable main\ndeb http://cydia.zodttd.com/repo/cydia/ stable main\ndeb http://julioverne.github.io/ ./\ndeb https://build.frida.re/ ./\ndeb https://cydia.akemi.ai/ ./\ndeb https://cydia.angelxwind.net/ ./\ndeb https://cydia.ichitaso.com/ ./\ndeb https://cydia.iphonecake.com/ ./\ndeb https://cydia.nowsecure.com/ ./\ndeb https://hackyouriphone.org/ ./\ndeb https://havoc.app/ ./\ndeb https://ios.jjolano.me/ ./\ndeb https://ios.tweaks.fun/ ./\ndeb https://jonlu.ca/repo/ ./\ndeb https://julioverne.github.io/ ./\ndeb https://level3tjg.xyz/repo/ ./\ndeb https://repo.chariz.com/ ./\ndeb https://repo.co.kr/ ./\ndeb https://repo.dynastic.co/ ./\ndeb https://repo.getsileo.app/ ./\ndeb https://repo.hackyouriphone.org/ ./\ndeb https://repo.packix.com/ ./\ndeb https://rpetri.ch/repo/ ./\ndeb https://ryleyangus.com/repo/ ./\n" | tee /etc/apt/sources.list.d/cydia.list
 
 echo -e "\n\e[92m[+] Refreshing the sources\e[0m"
-apt-get update
+apt-get update --fix-missing --allow-unauthenticated --allow-insecure-repositories
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
 Pkg="com.tigisoftware.filza e.frida.server  com.icraze.hestia com.julioverne.sslkillswitch2 com.hackyouriphone.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper cydia.com.ipc.crackerxi com.ichitaso.powerselector11 ws.hbang.newterm2 kr.xsf1re.vnodebypass com.hackyouriphone.flyjb openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript python python3 gawk nano unzip coreutils tree git org.coolstar.sileo"
 
 for i in ${Pkg} ;
- do apt-get install "${i}" -y 
+ do apt-get install "${i}" -y --allow-unauthenticated
 done 2>&1 | tee install.log
 
 install_log="./install.log"
@@ -50,6 +50,11 @@ else
   echo "Error: $install_log not found."
 fi
 
+
+echo -e '\e[33m\n[#] Please install "Apple File Conduit 2" (https://cydia.saurik.com/package/com.saurik.afc2d/) manually, as we have observed that it is not functioning properly on a few iOS devices.\e[0m'
+
+echo -e "\n\e[33mFollow Me On\e[0m" "\e[94mTwitter\e[0m" "\e[5m\e[33m@DarkLotusKDB\e[0m"
+echo -e "\e[92mHappy Hacking\e[0m"
 
 while true; do
   read -p "$(echo -e "\e[33m\n[#] Do you want to Respring your iOS device? (yes/no): \e[0m")" answer
@@ -69,10 +74,5 @@ while true; do
   esac
 done
 
-echo -e '\e[33m\n[#] Please install "Apple File Conduit 2" (https://cydia.saurik.com/package/com.saurik.afc2d/) manually, as we have observed that it is not functioning properly on a few iOS devices.\e[0m'
-
-
-echo -e "\n\e[33mFollow Me On\e[0m" "\e[94mTwitter\e[0m" "\e[5m\e[33m@DarkLotusKDB\e[0m"
-echo -e "\e[92mHappy Hacking\e[0m"
-
+echo -e "\e[92mThank You\e[0m"
 
