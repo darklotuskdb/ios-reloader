@@ -2,7 +2,7 @@
 The iOS Reloader is a weaponizing tool for jailbroken iOS devices. It facilitates the installation of a collection of tools on iOS devices (iPhone/iPad) that are essential for penetration testing purposes.
 
 ## The script will install the following tools and applications.
-
+```
 A-Bypass
 AJB
 Choicy
@@ -24,6 +24,7 @@ PowerSelector
 vnodebypass
 Flex 3
 Sileo / Cydia
+```
 
 # Usage
 ```
