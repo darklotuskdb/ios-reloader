@@ -74,7 +74,7 @@ if [ -f "$install_log" ]; then
     echo -e "\n\e[31m[-] The following packages are not installed properly. Please install manually:\e[0m"
     cat "$install_log" | grep -ia "Unable to locate package"
   
-  elif cat | grep -ia -A1 "The following packages have unmet dependencies" &> /dev/null ; then 
+  elif cat "$install_log" | grep -ia -A1 "The following packages have unmet dependencies" &> /dev/null ; then 
     echo -e "\n\e[31m[-] The following packages are not installed because of the dependencies issue:\e[0m"
     cat "$install_log" | grep -ia -A1 "The following packages have unmet dependencies"
 
