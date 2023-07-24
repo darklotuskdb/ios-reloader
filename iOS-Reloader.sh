@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git pull &> /dev/null
+
 echo -e '\e[31m
 
  _ _______ ______                              
