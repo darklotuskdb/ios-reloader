@@ -3,7 +3,6 @@
 git pull &> /dev/null
 
 echo -e '\e[31m
-
  _ _______ ______                              
 (_|_______) _____)                             
  _ _     ( (____                               
@@ -35,9 +34,7 @@ PowerSelector
 Shadow
 Sniperbypassjb
 SSL Kill Switch 2
-
--------------------
-
+====================
 Filza
 CrackerXL+
 NewTerm 2
@@ -45,7 +42,6 @@ PowerSelector
 vnodebypass
 Flex 3
 Sileo / Cydia
-
 '
 
 echo -e "\n[*] Press any key to continue..."
