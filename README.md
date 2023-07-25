@@ -3,6 +3,11 @@ The iOS Reloader is a weaponizing tool for jailbroken iOS devices. It facilitate
 
 ## The script will install the following tools and applications.
 ```
+Darwin CC Tools
+openssh
+frida
+lldb
+cycript
 A-Bypass
 AJB
 Choicy
