@@ -1,5 +1,9 @@
 # iOS Reloader
-The iOS Reloader is a weaponizing tool for jailbroken iOS devices. It facilitates the installation of a collection of tools on iOS devices (iPhone/iPad) that are essential for penetration testing purposes.
+Device setup during our assessments consumes a lot of time, so I have created a tool that will automatically install all the necessary tools required for our pentests.
+The iOS Reloader is a weaponizing tool designed for jailbroken iOS devices. It facilitates the installation of a collection of essential tools on iOS devices (iPhone/iPad) for penetration testing purposes.
+As of now, we are testing on iOS versions 12, 13, and 14, but feel free to use it on other versions as well and provide your feedback for further improvements. Additionally, please let me know about any tools we can add to this tool.
+The iOS Reloader will install the following tools and applications in one shot:
+
 
 ## The script will install the following tools and applications.
 ```
