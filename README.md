@@ -37,7 +37,7 @@ Sileo / Cydia
 
 # Usage
 ```
-./iOS-Reloader
+./iOS-Reloader.sh
 ```
 
 # Installation
