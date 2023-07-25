@@ -21,6 +21,11 @@ echo -e "\e[33m  By Kamaldeep Bhati (@DarkLotusKDB) <3\n\e[0m"
 
 echo -e "\e[92m[+] The script will install the following tools and applications\e[0m"
 echo -e '
+Darwin CC Tools
+Openssh
+Frida
+Lldb
+Cycript
 A-Bypass
 AJB
 Choicy
