@@ -19,7 +19,7 @@ echo -e '\e[31m
 \e[0m'
 echo -e "\e[33m  By Kamaldeep Bhati (@DarkLotusKDB) <3\n\e[0m"
 
-echo -e "\e[92m[+] The script will install the following tools and applications\e[0m"
+echo -e "\e[92m[+] The iOS Reloader will install the following tools and applications in one shot:\e[0m"
 echo -e '
 Darwin CC Tools
 Openssh
@@ -66,7 +66,7 @@ apt-get update --fix-missing --allow-unauthenticated --allow-insecure-repositori
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
-Pkg="com.tigisoftware.filza re.frida.server  com.icraze.hestia com.julioverne.sslkillswitch2 com.hackyouriphone.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper cydia.com.ipc.crackerxi com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 kr.xsf1re.vnodebypass org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript python python3 gawk nano unzip coreutils tree git org.coolstar.sileo libkrw com.johncoates.flex3"
+Pkg="com.tigisoftware.filza re.frida.server  com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 kr.xsf1re.vnodebypass org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript python python3 gawk nano unzip coreutils tree git org.coolstar.sileo libkrw com.johncoates.flex3 cydia.com.ipc.crackerxi"
 
 for i in ${Pkg} ;
  do apt-get install "${i}" -y --allow-unauthenticated
@@ -79,7 +79,7 @@ if [ -f "$install_log" ]; then
     echo -e "\n\e[31m[-] The following packages are not installed properly. Please install manually:\e[0m"
     cat "$install_log" | grep -ia "Unable to locate package"
   
-  elif cat "$install_log" | grep -ia -A1 "The following packages have unmet dependencies" &> /dev/null ; then 
+  elif cat | grep -ia -A1 "The following packages have unmet dependencies" &> /dev/null ; then 
     echo -e "\n\e[31m[-] The following packages are not installed because of the dependencies issue:\e[0m"
     cat "$install_log" | grep -ia -A1 "The following packages have unmet dependencies"
 
@@ -115,3 +115,5 @@ while true; do
 done
 
 echo -e "\e[92mThank You\e[0m"
+
+
