@@ -5,6 +5,8 @@ The iOS Reloader is a weaponizing tool designed for jailbroken iOS devices. It f
 
 As of now, we are testing on iOS versions 12, 13, and 14, but feel free to use it on other versions as well and provide your feedback for further improvements. Additionally, please let me know about any tools we can add to this tool.
 
+Note: Works well with the device already having Cydia installed, so if you face issues with Sileo, please first install Cydia and then re-run the iOS Reloader tool.
+
 ## The iOS Reloader will install the following tools and applications in one shot:
 ```
 Darwin CC Tools
