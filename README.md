@@ -36,6 +36,14 @@ PowerSelector
 vnodebypass
 Flex 3
 Sileo
+=====================
+Python
+Unzip
+Coreutils
+Git
+Nano
+Awk
+Tree
 ```
 
 # Usage
