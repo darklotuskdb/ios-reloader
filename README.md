@@ -27,6 +27,7 @@ PowerSelector
 Shadow
 Sniperbypassjb
 SSL Kill Switch 2
+Appsync Unified
 ====================
 Filza
 CrackerXL+
