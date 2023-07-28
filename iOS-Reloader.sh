@@ -77,7 +77,7 @@ apt-get update --fix-missing --allow-unauthenticated --allow-insecure-repositori
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
-Pkg="cydia.com.ipc.crackerxi com.tigisoftware.filza re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 kr.xsf1re.vnodebypass org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript python python3 gawk nano unzip coreutils tree git org.coolstar.sileo libkrw com.johncoates.flex3"
+Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 kr.xsf1re.vnodebypass org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript python python3 gawk nano unzip coreutils tree git org.coolstar.sileo libkrw com.johncoates.flex3 cydia.com.ipc.crackerxi"
 
 for i in ${Pkg} ;
  do apt-get install "${i}" -y --allow-unauthenticated
@@ -102,7 +102,7 @@ else
 fi
 
 
-echo -e '[#] Please install \e[33m\n"Apple File Conduit 2"\e[0m (https://cydia.saurik.com/package/com.saurik.afc2d/) manually, as we have observed that it is not functioning properly on a few iOS devices.'
+echo -e '\n[#] Please install \e[33m"Apple File Conduit 2"\e[0m (https://cydia.saurik.com/package/com.saurik.afc2d/) manually, as we have observed that it is not functioning properly on a few iOS devices.'
 
 echo -e "\n\e[33mFollow Me On\e[0m" "\e[94mTwitter\e[0m" "\e[5m\e[33m@DarkLotusKDB\e[0m"
 echo -e "\e[92mHappy Hacking\e[0m"
