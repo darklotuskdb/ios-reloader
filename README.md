@@ -27,7 +27,6 @@ PowerSelector
 Shadow
 Sniperbypassjb
 SSL Kill Switch 2
-SafeShutdown
 ====================
 Filza
 CrackerXL+
