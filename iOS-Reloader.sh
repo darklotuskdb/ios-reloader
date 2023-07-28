@@ -58,7 +58,7 @@ Awk
 Tree
 '
 
-echo -e '\e[33m[*] Note: Works well with the device already having Cydia installed, so if you face issues with Sileo, please first install Cydia and then re-run the iOS Reloader tool.\e[0m]'
+echo -e '\e[33m[*] Note: Works well with the device already having Cydia installed, so if you face issues with Sileo, please first install Cydia and then re-run the iOS Reloader tool.\e[0m'
 
 echo -e "\n[*] Press any key to continue..."
 read -n 1 -s -r -p ""
