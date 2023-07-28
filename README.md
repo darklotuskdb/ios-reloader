@@ -35,7 +35,7 @@ NewTerm 2
 PowerSelector
 vnodebypass
 Flex 3
-Sileo / Cydia
+Sileo
 ```
 
 # Usage
