@@ -19,7 +19,7 @@ echo -e '\e[31m
 \e[0m'
 echo -e "\e[33m  By Kamaldeep Bhati (@DarkLotusKDB) <3\n\e[0m"
 
-echo -e "\e[92m[+] The script will install the following tools and applications\e[0m"
+echo -e "\e[92m[+] The iOS Reloader will install the following tools and applications in one shot:\e[0m"
 echo -e '
 Darwin CC Tools
 Openssh
@@ -39,15 +39,26 @@ PowerSelector
 Shadow
 Sniperbypassjb
 SSL Kill Switch 2
+Appsync Unified
 ====================
 Filza
 CrackerXL+
 NewTerm 2
 PowerSelector
-vnodebypass
+Vnodebypass
 Flex 3
-Sileo / Cydia
+Sileo
+=====================
+Python
+Unzip
+Coreutils
+Git
+Nano
+Awk
+Tree
 '
+
+echo -e '\e[33m[*] Note: Works well with the device already having Cydia installed, so if you face issues with Sileo, please first install Cydia and then re-run the iOS Reloader tool.\e[0m]'
 
 echo -e "\n[*] Press any key to continue..."
 read -n 1 -s -r -p ""
@@ -57,7 +68,7 @@ mv /etc/apt/sources.list.d/cydia.list /etc/apt/sources.list.d/cydia.list.bak &> 
 
 echo -e "\n\e[92m[+] Preparing the cydia.list\e[0m"
 
-echo -e "\ndeb https://apt.bingner.com/ ./\ndeb http://apt.modmyi.com/ stable main\ndeb http://apt.thebigboss.org/repofiles/cydia/ stable main\ndeb http://cydia.zodttd.com/repo/cydia/ stable main\ndeb http://julioverne.github.io/ ./\ndeb https://build.frida.re/ ./\ndeb https://cydia.akemi.ai/ ./\ndeb https://cydia.angelxwind.net/ ./\ndeb https://cydia.ichitaso.com/ ./\ndeb https://cydia.iphonecake.com/ ./\ndeb https://cydia.nowsecure.com/ ./\ndeb https://hackyouriphone.org/ ./\ndeb https://havoc.app/ ./\ndeb https://ios.jjolano.me/ ./\ndeb https://ios.tweaks.fun/ ./\ndeb https://julioverne.github.io/ ./\ndeb https://repo.chariz.com/ ./\ndeb https://repo.co.kr/ ./\ndeb https://repo.dynastic.co/ ./\ndeb https://repo.getsileo.app/ ./\ndeb https://repo.hackyouriphone.org/ ./\ndeb https://repo.packix.com/ ./\ndeb https://rpetri.ch/repo/ ./\ndeb https://ryleyangus.com/repo/ ./\ndeb https://mrepo.org/ ./\n" | tee -a /etc/apt/sources.list.d/cydia.list.bak
+echo -e "\ndeb https://apt.bingner.com/ ./\ndeb http://apt.modmyi.com/ stable main\ndeb http://apt.thebigboss.org/repofiles/cydia/ stable main\ndeb http://cydia.zodttd.com/repo/cydia/ stable main\ndeb http://julioverne.github.io/ ./\ndeb https://build.frida.re/ ./\ndeb https://cydia.akemi.ai/ ./\ndeb https://cydia.angelxwind.net/ ./\ndeb https://cydia.ichitaso.com/ ./\ndeb https://cydia.iphonecake.com/ ./\ndeb https://cydia.nowsecure.com/ ./\ndeb https://havoc.app/ ./\ndeb https://ios.jjolano.me/ ./\ndeb https://ios.tweaks.fun/ ./\ndeb https://julioverne.github.io/ ./\ndeb https://repo.chariz.com/ ./\ndeb https://repo.co.kr/ ./\ndeb https://repo.dynastic.co/ ./\ndeb https://repo.getsileo.app/ ./\ndeb https://repo.packix.com/ ./\ndeb https://rpetri.ch/repo/ ./\ndeb https://ryleyangus.com/repo/ ./\ndeb https://mrepo.org/ ./\ndeb https://repo.rpgfarm.com/ ./\n" | tee -a /etc/apt/sources.list.d/cydia.list.bak
 
 cat /etc/apt/sources.list.d/cydia.list.bak | sort -u > /etc/apt/sources.list.d/cydia.list
 
@@ -66,7 +77,7 @@ apt-get update --fix-missing --allow-unauthenticated --allow-insecure-repositori
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
-Pkg="com.tigisoftware.filza re.frida.server  com.icraze.hestia com.julioverne.sslkillswitch2 com.hackyouriphone.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper cydia.com.ipc.crackerxi com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 kr.xsf1re.vnodebypass org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript python python3 gawk nano unzip coreutils tree git org.coolstar.sileo libkrw com.johncoates.flex3"
+Pkg="cydia.com.ipc.crackerxi com.tigisoftware.filza re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 kr.xsf1re.vnodebypass org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript python python3 gawk nano unzip coreutils tree git org.coolstar.sileo libkrw com.johncoates.flex3"
 
 for i in ${Pkg} ;
  do apt-get install "${i}" -y --allow-unauthenticated
@@ -91,7 +102,7 @@ else
 fi
 
 
-echo -e '\e[33m\n[#] Please install "Apple File Conduit 2" (https://cydia.saurik.com/package/com.saurik.afc2d/) manually, as we have observed that it is not functioning properly on a few iOS devices.\e[0m'
+echo -e '[#] Please install \e[33m\n"Apple File Conduit 2"\e[0m (https://cydia.saurik.com/package/com.saurik.afc2d/) manually, as we have observed that it is not functioning properly on a few iOS devices.'
 
 echo -e "\n\e[33mFollow Me On\e[0m" "\e[94mTwitter\e[0m" "\e[5m\e[33m@DarkLotusKDB\e[0m"
 echo -e "\e[92mHappy Hacking\e[0m"
