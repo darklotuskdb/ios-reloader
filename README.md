@@ -10,10 +10,11 @@ Note: Works well with the device already having Cydia installed, so if you face 
 ## The iOS Reloader will install the following tools and applications in one shot:
 ```
 Darwin CC Tools
-openssh
-frida
-lldb
-cycript
+Openssh
+Appsync Unified
+Frida
+Lldb
+Cycript
 A-Bypass
 AJB
 Choicy
@@ -27,17 +28,16 @@ PowerSelector
 Shadow
 Sniperbypassjb
 SSL Kill Switch 2
-Appsync Unified
+Location Faker
 ====================
 Filza
 CrackerXL+
 NewTerm 2
 PowerSelector
-vnodebypass
+Vnodebypass
 Flex 3
 Sileo
 =====================
-Python
 Unzip
 Coreutils
 Git
