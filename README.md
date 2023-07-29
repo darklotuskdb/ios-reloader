@@ -57,7 +57,7 @@ git clone https://github.com/darklotuskdb/ios-reloader.git && cd ios-reloader &&
 ```
 
 # Screenshot
-![image](https://github.com/darklotuskdb/ios-reloader/assets/29382875/dd85d942-5a82-47bf-864f-e8646293055a)
+![iOS-Reloader](https://github.com/darklotuskdb/ios-reloader/assets/29382875/d1780883-534b-42c4-a5b2-1b99886c6e1d)
 
 ## About Me
 
