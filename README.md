@@ -59,6 +59,11 @@ git clone https://github.com/darklotuskdb/ios-reloader.git && cd ios-reloader &&
 # Screenshot
 ![iOS-Reloader](https://github.com/darklotuskdb/ios-reloader/assets/29382875/d1780883-534b-42c4-a5b2-1b99886c6e1d)
 
+![settings](https://github.com/darklotuskdb/ios-reloader/assets/29382875/5e08f5fb-9935-42a5-88ca-a10c909265c8)
+
+![apps](https://github.com/darklotuskdb/ios-reloader/assets/29382875/42f6e0e3-ea25-45d9-bc3a-6a84eb6ab83c)
+
+
 ## About Me
 
 * **DarkLotus** - *Cyber Security Researcher* - [DarkLotusKDB](https://github.com/darklotuskdb)
