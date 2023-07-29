@@ -21,6 +21,7 @@ Choicy
 FlyJB X
 Hestia
 HideJB
+iHide
 JailProtect
 KernBypass
 Liberty Lite
