@@ -68,7 +68,7 @@ mv /etc/apt/sources.list.d/cydia.list /etc/apt/sources.list.d/cydia.list.bak &> 
 
 echo -e "\n\e[92m[+] Preparing the cydia.list\e[0m"
 
-echo -e "\ndeb https://apt.bingner.com/ ./\ndeb http://apt.modmyi.com/ stable main\ndeb http://apt.thebigboss.org/repofiles/cydia/ stable main\ndeb http://cydia.zodttd.com/repo/cydia/ stable main\ndeb http://julioverne.github.io/ ./\ndeb https://build.frida.re/ ./\ndeb https://cydia.akemi.ai/ ./\ndeb https://cydia.angelxwind.net/ ./\ndeb https://cydia.ichitaso.com/ ./\ndeb https://cydia.iphonecake.com/ ./\ndeb https://cydia.nowsecure.com/ ./\ndeb https://havoc.app/ ./\ndeb https://ios.jjolano.me/ ./\ndeb https://ios.tweaks.fun/ ./\ndeb https://julioverne.github.io/ ./\ndeb https://repo.chariz.com/ ./\ndeb https://repo.co.kr/ ./\ndeb https://repo.dynastic.co/ ./\ndeb https://repo.getsileo.app/ ./\ndeb https://repo.packix.com/ ./\ndeb https://rpetri.ch/repo/ ./\ndeb https://ryleyangus.com/repo/ ./\ndeb https://mrepo.org/ ./\ndeb https://repo.rpgfarm.com/ ./\ndeb https://repo.kc57.com/ ./\ndeb https://ios.tweaks.fun/ ./\n" | tee -a /etc/apt/sources.list.d/cydia.list.bak
+echo -e "\ndeb https://apt.bingner.com/ ./\ndeb http://apt.modmyi.com/ stable main\ndeb http://apt.thebigboss.org/repofiles/cydia/ stable main\ndeb http://cydia.zodttd.com/repo/cydia/ stable main\ndeb http://julioverne.github.io/ ./\ndeb https://build.frida.re/ ./\ndeb https://cydia.akemi.ai/ ./\ndeb https://cydia.angelxwind.net/ ./\ndeb https://cydia.ichitaso.com/ ./\ndeb https://cydia.iphonecake.com/ ./\ndeb https://cydia.nowsecure.com/ ./\ndeb https://havoc.app/ ./\ndeb https://ios.jjolano.me/ ./\ndeb https://ios.tweaks.fun/ ./\ndeb https://julioverne.github.io/ ./\ndeb https://repo.chariz.com/ ./\ndeb https://repo.co.kr/ ./\ndeb https://repo.dynastic.co/ ./\ndeb https://repo.getsileo.app/ ./\ndeb https://repo.packix.com/ ./\ndeb https://rpetri.ch/repo/ ./\ndeb https://ryleyangus.com/repo/ ./\ndeb https://mrepo.org/ ./\ndeb https://repo.kc57.com/ ./\ndeb https://ios.tweaks.fun/ ./\n" | tee -a /etc/apt/sources.list.d/cydia.list.bak
 
 cat /etc/apt/sources.list.d/cydia.list.bak | sort -u > /etc/apt/sources.list.d/cydia.list
 
@@ -126,3 +126,5 @@ while true; do
 done
 
 echo -e "\e[92mThank You\e[0m"
+
+#\ndeb https://repo.rpgfarm.com/ ./
