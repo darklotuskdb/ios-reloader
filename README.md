@@ -51,6 +51,7 @@ Tree
 ```
 ./iOS-Reloader.sh
 ```
+Note: Sometimes, certain repositories may not work in the India location. In such cases, you can use a VPN to connect to a US location.
 
 # Installation
 ```
