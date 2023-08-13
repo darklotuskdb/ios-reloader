@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git pull &> /dev/null
+Banner(){
 
 echo -e '\e[31m
  _ _______ ______                              
@@ -19,6 +19,9 @@ echo -e '\e[31m
 \e[0m'
 echo -e "\e[33m  By Kamaldeep Bhati (@DarkLotusKDB) <3\n\e[0m"
 
+}
+
+Install(){
 echo -e "\e[92m[+] The iOS Reloader will install the following tools and applications in one shot:\e[0m"
 echo -e '
 Darwin CC Tools
@@ -33,6 +36,7 @@ Choicy
 FlyJB X
 Hestia
 HideJB
+iHide
 JailProtect
 KernBypass
 Liberty Lite
@@ -58,7 +62,7 @@ Awk
 Tree
 '
 
-echo -e '\e[33m[*] Note: Works well with the device already having Cydia installed, so if you face issues with Sileo, please first install Cydia and then re-run the iOS Reloader tool.\e[0m'
+echo -e '\e[33m[*] Note:\e[0m Works well with the device already having \e[33mCydia installed\e[0m, so if you face issues with Sileo, please first install Cydia and then re-run the iOS Reloader tool.\e[0m'
 
 echo -e "\n[*] Press any key to continue..."
 read -n 1 -s -r -p ""
@@ -68,7 +72,7 @@ mv /etc/apt/sources.list.d/cydia.list /etc/apt/sources.list.d/cydia.list.bak &> 
 
 echo -e "\n\e[92m[+] Preparing the cydia.list\e[0m"
 
-echo -e "\ndeb https://apt.bingner.com/ ./\ndeb http://apt.modmyi.com/ stable main\ndeb http://apt.thebigboss.org/repofiles/cydia/ stable main\ndeb http://cydia.zodttd.com/repo/cydia/ stable main\ndeb http://julioverne.github.io/ ./\ndeb https://build.frida.re/ ./\ndeb https://cydia.akemi.ai/ ./\ndeb https://cydia.angelxwind.net/ ./\ndeb https://cydia.ichitaso.com/ ./\ndeb https://cydia.iphonecake.com/ ./\ndeb https://cydia.nowsecure.com/ ./\ndeb https://havoc.app/ ./\ndeb https://ios.jjolano.me/ ./\ndeb https://ios.tweaks.fun/ ./\ndeb https://julioverne.github.io/ ./\ndeb https://repo.chariz.com/ ./\ndeb https://repo.co.kr/ ./\ndeb https://repo.dynastic.co/ ./\ndeb https://repo.getsileo.app/ ./\ndeb https://repo.packix.com/ ./\ndeb https://rpetri.ch/repo/ ./\ndeb https://ryleyangus.com/repo/ ./\ndeb https://mrepo.org/ ./\ndeb https://repo.kc57.com/ ./\ndeb https://ios.tweaks.fun/ ./\n" | tee -a /etc/apt/sources.list.d/cydia.list.bak
+echo -e "\ndeb https://apt.bingner.com/ ./\ndeb http://apt.modmyi.com/ stable main\ndeb http://apt.thebigboss.org/repofiles/cydia/ stable main\ndeb http://cydia.zodttd.com/repo/cydia/ stable main\ndeb http://julioverne.github.io/ ./\ndeb https://build.frida.re/ ./\ndeb https://cydia.akemi.ai/ ./\ndeb https://cydia.angelxwind.net/ ./\ndeb https://cydia.ichitaso.com/ ./\ndeb https://cydia.iphonecake.com/ ./\ndeb https://cydia.nowsecure.com/ ./\ndeb https://havoc.app/ ./\ndeb https://ios.jjolano.me/ ./\ndeb https://ios.tweaks.fun/ ./\ndeb https://julioverne.github.io/ ./\ndeb https://repo.chariz.com/ ./\ndeb https://repo.co.kr/ ./\ndeb https://repo.dynastic.co/ ./\ndeb https://repo.getsileo.app/ ./\ndeb https://repo.packix.com/ ./\ndeb https://rpetri.ch/repo/ ./\ndeb https://ryleyangus.com/repo/ ./\ndeb https://mrepo.org/ ./\ndeb https://repo.rpgfarm.com/ ./\ndeb https://repo.kc57.com/ ./\ndeb https://ios.tweaks.fun/ ./\n" | tee -a /etc/apt/sources.list.d/cydia.list.bak
 
 cat /etc/apt/sources.list.d/cydia.list.bak | sort -u > /etc/apt/sources.list.d/cydia.list
 
@@ -107,6 +111,9 @@ echo -e '\n[#] Please install \e[33m"Apple File Conduit 2"\e[0m (https://cydia.s
 echo -e "\n\e[33mFollow Me On\e[0m" "\e[94mTwitter\e[0m" "\e[5m\e[33m@DarkLotusKDB\e[0m"
 echo -e "\e[92mHappy Hacking\e[0m"
 
+}
+
+Respring(){
 while true; do
   read -p "$(echo -e "\e[33m\n[#] Do you want to Respring your iOS device? (yes/no): \e[0m")" answer
   case "$answer" in
@@ -126,5 +133,92 @@ while true; do
 done
 
 echo -e "\e[92mThank You\e[0m"
+}
 
-#\ndeb https://repo.rpgfarm.com/ ./
+
+Remove(){
+echo -e "\e[92m[-] The iOS Reloader will \e[31mremove\e[0m\e[92m the following tools and applications in one shot:\e[0m"
+echo -e '
+Darwin CC Tools
+Lldb
+Cycript
+A-Bypass
+AJB
+Choicy
+FlyJB X
+Hestia
+HideJB
+iHide
+JailProtect
+KernBypass
+Liberty Lite
+PowerSelector
+Shadow
+SSL Kill Switch 2
+Location Faker
+====================
+Filza
+CrackerXL+
+NewTerm 2
+PowerSelector
+Vnodebypass
+Flex 3
+Sileo
+'
+
+echo -e "\n[*] Press any key to continue..."
+read -n 1 -s -r -p ""
+
+echo -e "\n\e[92m[-] Please wait.... Removing in progress\e[0m"
+
+Pkg="com.tigisoftware.filza com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 kr.xsf1re.vnodebypass org.mr.flyjbx lldb lldb-10 liblldb-10 cycript org.coolstar.sileo libkrw com.johncoates.flex3 fun.tweaks.locationfaker com.kc57.ihide cydia.com.ipc.crackerxi"
+
+
+for i in ${Pkg} ;
+ do 
+ apt-get remove "${i}" -y --purge
+ apt-get autoremove --purge
+done 2>&1 | tee remove.log
+
+echo -e "\n\e[92m[-] The tools have been removed successfully."
+
+echo -e "\n\e[33mFollow Me On\e[0m" "\e[94mTwitter\e[0m" "\e[5m\e[33m@DarkLotusKDB\e[0m"
+echo -e "\e[92mHappy Hacking\e[0m"
+
+}
+
+show_help(){
+echo
+echo "To Install: ./iOS-Reloader.sh -i"
+echo
+echo "To Remove: ./iOS-Reloader.sh -r"
+echo
+}
+
+if [ $# -eq 0 ]; then
+    Banner
+    show_help
+    exit 1
+fi
+
+while getopts "ir" opt; do
+    case $opt in
+        i)
+            Banner
+            Install
+            Respring
+            ;;
+        r)
+            Banner
+            Remove
+            Respring
+            ;;
+        *)
+            Banner
+            show_help
+            exit 1
+            ;;
+    esac
+done
+
+shift $((OPTIND-1))
