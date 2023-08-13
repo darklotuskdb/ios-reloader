@@ -188,7 +188,7 @@ Pkg="com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odccto
 
 for i in ${Pkg} ;
  do 
- apt-get remove -y "${i}" --purge
+ apt-get remove -y --purge "${i}"
  apt-get autoremove --purge
 done 2>&1 | tee remove.log
 
