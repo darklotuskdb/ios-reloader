@@ -84,7 +84,7 @@ echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 kr.xsf1re.vnodebypass org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript gawk nano unzip coreutils tree git org.coolstar.sileo libkrw com.johncoates.flex3 fun.tweaks.locationfaker com.kc57.ihide cydia.com.ipc.crackerxi"
 
 for i in ${Pkg} ;
- do apt-get install "${i}" -y --allow-unauthenticated
+ do apt-get install -y "${i}" --allow-unauthenticated
 done 2>&1 | tee install.log
 
 install_log="./install.log"
@@ -132,7 +132,7 @@ while true; do
   esac
 done
 
-echo -e "\e[92mThank You\e[0m"
+echo -e "\e[92m\nThank You\e[0m\n"
 }
 
 
@@ -165,17 +165,30 @@ Flex 3
 Sileo
 '
 
+echo -e "\e[92m[+] The iOS Reloader will \e[31mnot remove\e[0m\e[92m the following tools and applications:\e[0m"
+echo -e '
+Appsync Unified
+Openssh
+Sniperbypassjb
+Unzip
+Coreutils
+Git
+Nano
+Awk
+Tree
+'
+
 echo -e "\n[*] Press any key to continue..."
 read -n 1 -s -r -p ""
 
 echo -e "\n\e[92m[-] Please wait.... Removing in progress\e[0m"
 
-Pkg="com.tigisoftware.filza com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.ichitaso.powerselector com.ichitaso.powerselector11 kr.xsf1re.vnodebypass org.mr.flyjbx lldb lldb-10 liblldb-10 cycript org.coolstar.sileo libkrw com.johncoates.flex3 fun.tweaks.locationfaker com.kc57.ihide cydia.com.ipc.crackerxi"
+Pkg="com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.ichitaso.powerselector com.ichitaso.powerselector11 kr.xsf1re.vnodebypass org.mr.flyjbx lldb lldb-10 liblldb-10 cycript org.coolstar.sileo libkrw com.johncoates.flex3 fun.tweaks.locationfaker com.kc57.ihide cydia.com.ipc.crackerxi p7zip unrar zip com.tigisoftware.filza"
 
 
 for i in ${Pkg} ;
  do 
- apt-get remove "${i}" -y --purge
+ apt-get remove -y "${i}" --purge
  apt-get autoremove --purge
 done 2>&1 | tee remove.log
 
