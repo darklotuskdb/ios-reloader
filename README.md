@@ -48,10 +48,16 @@ Tree
 ```
 
 # Usage
+To Install:
 ```
-./iOS-Reloader.sh
+./iOS-Reloader.sh -i
 ```
 Note: Sometimes, certain repositories may not work in the India location. In such cases, you can use a VPN to connect to a US location.
+
+To Remove:
+```
+./iOS-Reloader.sh -r
+```
 
 # Installation
 ```
