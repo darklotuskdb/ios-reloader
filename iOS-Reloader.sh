@@ -160,7 +160,8 @@ echo -e "\n[*] Press any key to continue..."
 read -n 1 -s -r -p ""
 
 echo -e "\n\e[92m[+] Taking backup of sileo.sources as sileo.sources.bak\e[0m"
-mv /etc/apt/sources.list.d/sileo.sources /etc/apt/sources.list.d/sileo.sources.bak &> /dev/null
+mv /etc/apt/sources.list.d/sileo.sources /tmp/sileo.sources.bak &> /dev/null
+apt-get update --fix-missing
 
 echo -e "\n\e[92m[+] Preparing the sileo.sources\e[0m"
 
@@ -168,7 +169,7 @@ echo -e "Types: deb \nURIs: https://havoc.app/ \nSuites: ./ \nComponents: \n\nTy
 
 
 echo -e "\n\e[92m[+] Refreshing the sources\e[0m"
-apt-get update --fix-missing --allow-unauthenticated --allow-insecure-repositories
+apt-get update --allow-unauthenticated --allow-insecure-repositories
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
