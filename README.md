@@ -3,9 +3,7 @@ Device setup during our assessments consumes a lot of time, so I have created a 
 
 The iOS Reloader is a weaponizing tool designed for jailbroken iOS devices. It facilitates the installation of a collection of essential tools on iOS devices (iPhone/iPad) for penetration testing purposes.
 
-As of now, we are testing on iOS versions 12, 13, and 14, but feel free to use it on other versions as well and provide your feedback for further improvements. Additionally, please let me know about any tools we can add to this tool.
-
-Note: Works well with the device already having Cydia installed, so if you face issues with Sileo, please first install Cydia and then re-run the iOS Reloader tool.
+As of now, we are testing on iOS versions 12, 13, 14, 15 and 16 but feel free to use it on other versions as well and provide your feedback for further improvements. Additionally, please let me know about any tools we can add to this tool.
 
 ## The iOS Reloader will install the following tools and applications in one shot:
 ```
@@ -48,9 +46,14 @@ Tree
 ```
 
 # Usage
-To Install:
+##To Install:
+For Sileo
 ```
-./iOS-Reloader.sh -i
+./iOS-Reloader.sh -s
+```
+For Cydia
+```
+./iOS-Reloader.sh -c
 ```
 Note: Sometimes, certain repositories may not work in the India location. In such cases, you can use a VPN to connect to a US location.
 
