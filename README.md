@@ -64,7 +64,7 @@ To Remove:
 
 # Installation
 ```
-git clone https://github.com/darklotuskdb/ios-reloader.git && cd ios-reloader && chmod +x *.sh
+apt-get install git && git clone https://github.com/darklotuskdb/ios-reloader.git && cd ios-reloader && chmod +x *.sh
 ```
 
 # Screenshot
