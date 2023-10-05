@@ -47,13 +47,14 @@ Tree
 
 # Usage
 ##To Install:
-For Sileo
-```
-./iOS-Reloader.sh -s
-```
 For Cydia
 ```
 ./iOS-Reloader.sh -c
+```
+For Sileo
+Note: Sileo may not work properly as its still under development.
+```
+./iOS-Reloader.sh -s
 ```
 Note: Sometimes, certain repositories may not work in the India location. In such cases, you can use a VPN to connect to a US location.
 
