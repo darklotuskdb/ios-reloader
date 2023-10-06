@@ -126,7 +126,6 @@ Frida
 Lldb
 Cycript
 A-Bypass
-AJB
 Choicy
 FlyJB X
 Hestia
@@ -144,7 +143,6 @@ Filza
 CrackerXL+
 NewTerm 2
 PowerSelector
-Vnodebypass
 Flex 3
 Sileo
 =====================
@@ -154,6 +152,7 @@ Git
 Nano
 Awk
 Tree
+Ldid
 '
 
 echo -e "\n[*] Press any key to continue..."
@@ -165,7 +164,7 @@ apt-get update --fix-missing
 
 echo -e "\n\e[92m[+] Preparing the sileo.sources\e[0m"
 
-echo -e "Types: deb \nURIs: https://havoc.app/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://repo.chariz.com/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://build.frida.re/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: http://apt.thebigboss.org/repofiles/cydia/ \nSuites: stable \nComponents: main \n\nTypes: deb \nURIs: http://cydia.zodttd.com/repo/cydia/ \nSuites: stable \nComponents: main \n\nTypes: deb \nURIs: http://julioverne.github.io/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://cydia.akemi.ai/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://cydia.angelxwind.net/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://cydia.ichitaso.com/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://cydia.iphonecake.com/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://cydia.nowsecure.com/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://ios.jjolano.me/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://ios.tweaks.fun/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://julioverne.github.io/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://repo.chariz.com/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://repo.co.kr/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://repo.dynastic.co/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://repo.getsileo.app/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://repo.packix.com/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://rpetri.ch/repo/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://ryleyangus.com/repo/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://mrepo.org/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://repo.rpgfarm.com/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://repo.kc57.com/ \nSuites: ./ \nComponents: \n\nTypes: deb \nURIs: https://ios.tweaks.fun/ \nSuites: ./ \nComponents: " | tee /etc/apt/sources.list.d/sileo.sources
+echo -e "Types: deb\nURIs: http://apt.thebigboss.org/repofiles/cydia/\nSuites: stable\nComponents: main\n\nTypes: deb\nURIs: https://havoc.app/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.chariz.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://build.frida.re/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: http://julioverne.github.io/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.jjolano.me/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.tweaks.fun/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://julioverne.github.io/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.chariz.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.co.kr/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.dynastic.co/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.getsileo.app/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.packix.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ryleyangus.com/repo/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://mrepo.org/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.rpgfarm.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.kc57.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.tweaks.fun/\nSuites: ./\nComponents: " | tee /etc/apt/sources.list.d/sileo.sources
 
 
 echo -e "\n\e[92m[+] Refreshing the sources\e[0m"
@@ -173,7 +172,7 @@ apt-get update --allow-unauthenticated --allow-insecure-repositories
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
-Pkg="com.tigisoftware.filza64bit re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 kr.xsf1re.vnodebypass org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript gawk nano unzip coreutils tree git org.coolstar.sileo libkrw com.johncoates.flex3 fun.tweaks.locationfaker com.kc57.ihide ldid cydia.com.ipc.crackerxi"
+Pkg="com.tigisoftware.filza64bit re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript gawk nano unzip coreutils tree git org.coolstar.sileo libkrw com.johncoates.flex3 fun.tweaks.locationfaker com.kc57.ihide ldid cydia.com.ipc.crackerxi"
 
 for i in ${Pkg} ;
  do apt-get install -y "${i}" --allow-unauthenticated
