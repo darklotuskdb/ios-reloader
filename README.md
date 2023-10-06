@@ -46,7 +46,7 @@ Tree
 ```
 
 # Usage
-##To Install:
+## To Install:
 For Cydia
 ```
 ./iOS-Reloader.sh -c
