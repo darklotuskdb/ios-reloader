@@ -130,6 +130,7 @@ Choicy
 FlyJB X
 Hestia
 HideJB
+iHide
 JailProtect
 KernBypass
 Liberty Lite
@@ -140,10 +141,8 @@ SSL Kill Switch 2
 Location Faker
 ====================
 Filza
-CrackerXL+
 NewTerm 2
 PowerSelector
-Flex 3
 Sileo
 =====================
 Unzip
@@ -172,7 +171,7 @@ apt-get update --allow-unauthenticated --allow-insecure-repositories
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
-Pkg="com.tigisoftware.filza64bit re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-10 liblldb-10 cycript gawk nano unzip coreutils tree git org.coolstar.sileo libkrw com.johncoates.flex3 fun.tweaks.locationfaker com.kc57.ihide ldid cydia.com.ipc.crackerxi"
+Pkg="com.tigisoftware.filza64bit re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.bypassjb.sniper com.ichitaso.powerselector com.ichitaso.powerselector11 ws.hbang.newterm2 org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-14 liblldb-14 cycript gawk nano unzip coreutils tree git org.coolstar.sileo libkrw fun.tweaks.locationfaker com.kc57.ihide ldid"
 
 for i in ${Pkg} ;
  do apt-get install -y "${i}" --allow-unauthenticated
@@ -294,7 +293,11 @@ echo -e "\e[92mHappy Hacking\e[0m"
 
 show_help(){
 echo
-echo "To Install: ./iOS-Reloader.sh -i"
+echo "To Install in iOS device having:"
+echo
+echo "Cydia: ./iOS-Reloader.sh -c"
+echo
+echo "Sileo: ./iOS-Reloader.sh -s"
 echo
 echo "To Remove: ./iOS-Reloader.sh -r"
 echo
