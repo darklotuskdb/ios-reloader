@@ -169,7 +169,7 @@ apt-get update --allow-unauthenticated --allow-insecure-repositories
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
-Pkg="com.tigisoftware.filza64bit re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta me.jjolano.shadow com.bypassjb.sniper ws.hbang.newterm2 org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-14 liblldb-14 cycript gawk nano unzip coreutils tree git org.coolstar.sileo libkrw fun.tweaks.locationfaker com.kc57.ihide ldid"
+Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.opa334.choicy com.thuthuatjb.hidejb ai.akemi.appsyncunified com.julioverne.jailprotect com.ryleyangus.libertylite.beta me.jjolano.shadow com.bypassjb.sniper ws.hbang.newterm2 org.mr.flyjbx openssh libssh2 openssh-client openssh-global-listener openssh-server lldb lldb-14 liblldb-14 cycript gawk nano unzip coreutils tree git org.coolstar.sileo libkrw fun.tweaks.locationfaker com.kc57.ihide ldid"
 
 for i in ${Pkg} ;
  do apt-get install -y "${i}" --allow-unauthenticated
