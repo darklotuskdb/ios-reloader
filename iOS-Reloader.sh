@@ -38,6 +38,7 @@ SSL Kill Switch 2
 Location Faker
 ====================
 Filza
+iGameGod
 CrackerXL+
 NewTerm 2
 Flex 3
@@ -60,7 +61,7 @@ mv /etc/apt/sources.list.d/cydia.list /etc/apt/sources.list.d/cydia.list.bak &> 
 
 echo -e "\n\e[92m[+] Preparing the cydia.list\e[0m"
 
-echo -e "\ndeb https://apt.bingner.com/ ./\ndeb http://apt.modmyi.com/ stable main\ndeb http://apt.thebigboss.org/repofiles/cydia/ stable main\ndeb http://cydia.zodttd.com/repo/cydia/ stable main\ndeb http://julioverne.github.io/ ./\ndeb https://build.frida.re/ ./\ndeb https://cydia.akemi.ai/ ./\ndeb https://cydia.angelxwind.net/ ./\ndeb https://cydia.ichitaso.com/ ./\ndeb https://cydia.iphonecake.com/ ./\ndeb https://cydia.nowsecure.com/ ./\ndeb https://havoc.app/ ./\ndeb https://ios.jjolano.me/ ./\ndeb https://ios.tweaks.fun/ ./\ndeb https://julioverne.github.io/ ./\ndeb https://repo.chariz.com/ ./\ndeb https://repo.co.kr/ ./\ndeb https://repo.dynastic.co/ ./\ndeb https://repo.getsileo.app/ ./\ndeb https://repo.packix.com/ ./\ndeb https://rpetri.ch/repo/ ./\ndeb https://ryleyangus.com/repo/ ./\ndeb https://mrepo.org/ ./\ndeb https://repo.rpgfarm.com/ ./\ndeb https://repo.kc57.com/ ./\ndeb https://ios.tweaks.fun/ ./\n" | tee -a /etc/apt/sources.list.d/cydia.list.bak
+echo -e "\ndeb https://apt.bingner.com/ ./\ndeb http://apt.modmyi.com/ stable main\ndeb http://apt.thebigboss.org/repofiles/cydia/ stable main\ndeb http://cydia.zodttd.com/repo/cydia/ stable main\ndeb http://julioverne.github.io/ ./\ndeb https://build.frida.re/ ./\ndeb https://cydia.akemi.ai/ ./\ndeb https://cydia.angelxwind.net/ ./\ndeb https://cydia.ichitaso.com/ ./\ndeb https://cydia.iphonecake.com/ ./\ndeb https://cydia.nowsecure.com/ ./\ndeb https://havoc.app/ ./\ndeb https://ios.jjolano.me/ ./\ndeb https://ios.tweaks.fun/ ./\ndeb https://julioverne.github.io/ ./\ndeb https://repo.chariz.com/ ./\ndeb https://repo.co.kr/ ./\ndeb https://repo.dynastic.co/ ./\ndeb https://repo.getsileo.app/ ./\ndeb https://repo.packix.com/ ./\ndeb https://rpetri.ch/repo/ ./\ndeb https://ryleyangus.com/repo/ ./\ndeb https://mrepo.org/ ./\ndeb https://repo.rpgfarm.com/ ./\ndeb https://repo.kc57.com/ ./\ndeb https://ios.tweaks.fun/ ./\ndeb https://iosgods.com/repo/ ./\n" | tee -a /etc/apt/sources.list.d/cydia.list.bak
 
 cat /etc/apt/sources.list.d/cydia.list.bak | sort -u > /etc/apt/sources.list.d/cydia.list
 
@@ -69,7 +70,7 @@ apt-get update --fix-missing --allow-unauthenticated --allow-insecure-repositori
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
-Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia odcctools darwintools com.opa334.choicy ai.akemi.appsyncunified com.bypassjb.sniper com.ichitaso.powerselector ws.hbang.newterm2 openssh lldb cycript gawk nano unzip coreutils tree git com.johncoates.flex3 fun.tweaks.locationfaker com.cannathea.afc2d-arm64 com.julioverne.sslkillswitch2 cydia.com.ipc.crackerxi"
+Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia odcctools darwintools com.opa334.choicy ai.akemi.appsyncunified com.bypassjb.sniper com.ichitaso.powerselector ws.hbang.newterm2 openssh lldb cycript gawk nano unzip coreutils tree git com.johncoates.flex3 fun.tweaks.locationfaker com.cannathea.afc2d-arm64 com.gamegod.igg com.julioverne.sslkillswitch2 cydia.com.ipc.crackerxi"
 
 for i in ${Pkg} ;
  do apt-get install -y "${i}" --allow-unauthenticated
@@ -120,6 +121,7 @@ SSL Kill Switch 2
 Location Faker
 ====================
 Filza
+iGameGod
 NewTerm 2
 =====================
 Unzip
@@ -140,16 +142,16 @@ apt-get update --fix-missing
 
 echo -e "\n\e[92m[+] Preparing the sileo.sources\e[0m"
 
-echo -e "Types: deb\nURIs: http://apt.thebigboss.org/repofiles/cydia/\nSuites: stable\nComponents: main\n\nTypes: deb\nURIs: https://havoc.app/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.chariz.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://build.frida.re/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: http://julioverne.github.io/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.jjolano.me/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.tweaks.fun/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://julioverne.github.io/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.chariz.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.co.kr/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.dynastic.co/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.getsileo.app/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.packix.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ryleyangus.com/repo/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://mrepo.org/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.rpgfarm.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.kc57.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.tweaks.fun/\nSuites: ./\nComponents: " | tee /etc/apt/sources.list.d/sileo.sources
+echo -e "Types: deb\nURIs: http://apt.thebigboss.org/repofiles/cydia/\nSuites: stable\nComponents: main\n\nTypes: deb\nURIs: https://havoc.app/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.chariz.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://build.frida.re/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: http://julioverne.github.io/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.jjolano.me/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.tweaks.fun/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://julioverne.github.io/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.chariz.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.co.kr/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.dynastic.co/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.getsileo.app/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.packix.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ryleyangus.com/repo/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://mrepo.org/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.rpgfarm.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.kc57.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://iosgods.com/repo/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.tweaks.fun/\nSuites: ./\nComponents: " | tee /etc/apt/sources.list.d/sileo.sources
 
-echo -e "Types: deb\nURIs: http://apt.thebigboss.org/repofiles/cydia/\nSuites: stable\nComponents: main\n\nTypes: deb\nURIs: https://havoc.app/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.chariz.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://build.frida.re/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: http://julioverne.github.io/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.jjolano.me/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.tweaks.fun/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://julioverne.github.io/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.chariz.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.co.kr/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.dynastic.co/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.getsileo.app/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.packix.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ryleyangus.com/repo/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://mrepo.org/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.rpgfarm.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.kc57.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.tweaks.fun/\nSuites: ./\nComponents: " | tee /var/jb/etc/apt/sources.list.d/sileo.sources
+echo -e "Types: deb\nURIs: http://apt.thebigboss.org/repofiles/cydia/\nSuites: stable\nComponents: main\n\nTypes: deb\nURIs: https://havoc.app/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.chariz.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://build.frida.re/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: http://julioverne.github.io/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.jjolano.me/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.tweaks.fun/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://julioverne.github.io/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.chariz.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.co.kr/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.dynastic.co/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.getsileo.app/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.packix.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ryleyangus.com/repo/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://mrepo.org/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.rpgfarm.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://repo.kc57.com/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://ios.tweaks.fun/\nSuites: ./\nComponents: \n\nTypes: deb\nURIs: https://iosgods.com/repo/\nSuites: ./\nComponents: " | tee /var/jb/etc/apt/sources.list.d/sileo.sources
 
 echo -e "\n\e[92m[+] Refreshing the sources\e[0m"
 apt-get update --allow-unauthenticated --allow-insecure-repositories
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
-Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia odcctools darwintools com.opa334.choicy com.bypassjb.sniper ws.hbang.newterm3 openssh lldb cycript gawk nano unzip coreutils tree git fun.tweaks.locationfaker ai.akemi.appsyncunified com.cannathea.afc2d-arm64 com.julioverne.sslkillswitch2"
+Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia odcctools darwintools com.opa334.choicy com.bypassjb.sniper ws.hbang.newterm3 openssh lldb cycript gawk nano unzip coreutils tree git fun.tweaks.locationfaker ai.akemi.appsyncunified com.cannathea.afc2d-arm64 com.gamegod.igg com.julioverne.sslkillswitch2"
 
 #removed: com.rpgfarm.a-bypass com.thuthuatjb.hidejb com.julioverne.jailprotect com.ryleyangus.libertylite.beta me.jjolano.shadow
 
@@ -231,6 +233,7 @@ Location Faker
 ====================
 Filza
 CrackerXL+
+iGameGod
 PowerSelector
 Vnodebypass
 Flex 3
@@ -255,7 +258,7 @@ read -n 1 -s -r -p ""
 
 echo -e "\n\e[92m[-] Please wait.... Removing in progress\e[0m"
 
-Pkg="com.icraze.hestia com.cannathea.afc2d-arm64 com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.ichitaso.powerselector com.ichitaso.powerselector11 kr.xsf1re.vnodebypass org.mr.flyjbx lldb lldb-10 liblldb-10 cycript org.coolstar.sileo libkrw com.johncoates.flex3 fun.tweaks.locationfaker com.kc57.ihide cydia.com.ipc.crackerxi p7zip unrar zip com.tigisoftware.filza"
+Pkg="com.icraze.hestia com.cannathea.afc2d-arm64 com.julioverne.sslkillswitch2 com.rpgfarm.a-bypass odcctools darwintools com.ahmedmakls.ajb com.opa334.choicy com.thuthuatjb.hidejb com.julioverne.jailprotect com.ryleyangus.libertylite.beta jp.akusio.kernbypass-unofficial me.jjolano.shadow com.ichitaso.powerselector com.ichitaso.powerselector11 kr.xsf1re.vnodebypass org.mr.flyjbx lldb lldb-10 liblldb-10 cycript org.coolstar.sileo libkrw com.johncoates.flex3 fun.tweaks.locationfaker com.kc57.ihide cydia.com.ipc.crackerxi p7zip unrar zip com.tigisoftware.filza com.gamegod.igg"
 
 
 for i in ${Pkg} ;
