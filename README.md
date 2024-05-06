@@ -45,6 +45,24 @@ Awk
 Tree
 ```
 
+### I have removed the following jailbreak tools to improve stability,
+```
+HideJB
+iHide
+JailProtect
+KernBypass
+Liberty Lite
+A-Bypass
+AJB
+Vnodebypass
+FlyJB X
+Shadow
+```
+### and the best tool for bypassing jailbreak is: 
+```
+https://github.com/rsbarsania/Universal-JailBreak-Bypass
+```
+
 # Usage
 ## To Install:
 For Cydia
