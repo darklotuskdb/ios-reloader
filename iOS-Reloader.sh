@@ -69,7 +69,7 @@ apt-get update --fix-missing --allow-unauthenticated --allow-insecure-repositori
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
-Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 odcctools darwintools com.opa334.choicy ai.akemi.appsyncunified com.bypassjb.sniper com.ichitaso.powerselector ws.hbang.newterm2 openssh lldb cycript gawk nano unzip coreutils tree git com.johncoates.flex3 fun.tweaks.locationfaker cydia.com.ipc.crackerxi"
+Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia odcctools darwintools com.opa334.choicy ai.akemi.appsyncunified com.bypassjb.sniper com.ichitaso.powerselector ws.hbang.newterm2 openssh lldb cycript gawk nano unzip coreutils tree git com.johncoates.flex3 fun.tweaks.locationfaker com.julioverne.sslkillswitch2 cydia.com.ipc.crackerxi"
 
 for i in ${Pkg} ;
  do apt-get install -y "${i}" --allow-unauthenticated
@@ -149,7 +149,7 @@ apt-get update --allow-unauthenticated --allow-insecure-repositories
 
 echo -e "\n\e[92m[+] Please wait.... Installation in progress\e[0m"
 
-Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia com.julioverne.sslkillswitch2 odcctools darwintools com.opa334.choicy com.bypassjb.sniper ws.hbang.newterm3 openssh lldb cycript gawk nano unzip coreutils tree git fun.tweaks.locationfaker ai.akemi.appsyncunified"
+Pkg="com.tigisoftware.filza re.frida.server com.icraze.hestia odcctools darwintools com.opa334.choicy com.bypassjb.sniper ws.hbang.newterm3 openssh lldb cycript gawk nano unzip coreutils tree git fun.tweaks.locationfaker ai.akemi.appsyncunified com.julioverne.sslkillswitch2"
 
 #removed: com.rpgfarm.a-bypass com.thuthuatjb.hidejb com.julioverne.jailprotect com.ryleyangus.libertylite.beta me.jjolano.shadow
 
