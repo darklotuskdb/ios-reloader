@@ -178,7 +178,8 @@ else
 fi
 
 
-echo -e '\n[#] Please install \e[33m"Apple File Conduit 2"\e[0m (https://cydia.saurik.com/package/com.saurik.afc2d/) manually, as we have observed that it is not functioning properly on a few iOS devices.'
+#echo -e '\n[#] Please install \e[33m"Apple File Conduit 2"\e[0m (https://cydia.saurik.com/package/com.saurik.afc2d/) manually, as we have observed that it is not functioning properly on a few iOS devices.'
+echo -e '\n[#] Re-plug your iOS device into your system and launch 3uTools and confirm the root path direct access via  navigating to iDevice -> Files -> File System (Jailbreak) \e[0m'
 
 echo -e "\n\e[33mFollow Me On\e[0m" "\e[94mTwitter\e[0m" "\e[5m\e[33m@DarkLotusKDB\e[0m"
 echo -e "\e[92mHappy Hacking\e[0m"
