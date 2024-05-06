@@ -65,13 +65,13 @@ https://github.com/rsbarsania/Universal-JailBreak-Bypass
 
 # Usage
 ## To Install:
-For Cydia
-```
-./iOS-Reloader.sh -c
-```
 For Sileo
 ```
 ./iOS-Reloader.sh -s
+```
+For Cydia
+```
+./iOS-Reloader.sh -c
 ```
 Note: Sometimes, certain repositories may not work in the India location. In such cases, you can use a VPN to connect to a US location.
 
