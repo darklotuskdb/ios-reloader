@@ -5,6 +5,8 @@ The iOS Reloader is a weaponizing tool designed for jailbroken iOS devices. It f
 
 As of now, we are testing on iOS versions 12, 13, 14, 15 and 16 but feel free to use it on other versions as well and provide your feedback for further improvements. Additionally, please let me know about any tools we can add to this tool.
 
+Note: The tool will create a backup of all the current repositories in the tmp (/tmp) directory, so please be aware of that. I will improve this soon to prevent it from removing existing repositories.
+
 ## The iOS Reloader will install the following tools and applications in one shot:
 ```
 Darwin CC Tools
